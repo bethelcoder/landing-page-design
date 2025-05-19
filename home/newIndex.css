@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 5rem;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.nav-center-logo {
+    margin-left: -60px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-center-logo span {
+    color: #0967FC;
+  }
+
+
+.nav-cta button {
+    background-color: #000;
+    color: #fff;
+    padding: .8rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: .7rem;
+}
+
+.hero {
+  height: 90vh;
+  max-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('/faizur-rehman-pHPzdEHN6Os-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 25vh;
+  padding-left: 10vh;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-text .headline {
+    font-size: 2.8rem;
+}
+
+.hero-text .subline {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.CTA {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.CTA .cta-buttons {
+    padding: .8rem 1.3rem;
+    outline: none;
+    border-radius: 20px;
+}
+.btn-primary {
+    color: #000;
+     border: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* ------- main -------- */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1 .services {
+  display: flex;
+  gap: 50px; /* space between cards */
+  justify-content: space-between;
+  /* align-items: stretch; make cards equal height */
+  padding: 2rem; /* wraps on smaller screens */
+}
+
+.card {
+  flex: 1 1 550px; /* grow, shrink, base width */
+  width: 20rem;
+  max-width: 800px;
+  background-color: transparent;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-icon img{
+    width: 20rem;
+    height: 12rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.content h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+}
+

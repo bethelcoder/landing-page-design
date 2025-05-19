@@ -1,0 +1,222 @@
+/* === General Layout === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* === Navbar === */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  padding: 0 5%;
+  position: relative;
+  z-index: 999;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 24px;
+  background: #000;
+  margin: 3px 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 90%;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  display: none; /* Show on mobile when toggled */
+}
+
+.mobile-logo {
+  margin: 40px 0;
+}
+
+.mobile-join {
+  margin-top: 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.nav-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* === Buttons === */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.join-btn {
+  width: 100%;
+}
+
+.login-btn {
+  padding: 6px 16px;
+}
+
+.get-started,
+.learn-more {
+  padding: 12px 24px;
+  margin-right: 10px;
+}
+
+.text-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* === Hero Section === */
+.hero-section {
+  position: relative;
+  padding: 80px 5%;
+  color: #fff;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 960px;
+}
+
+.text-box {
+  max-width: 640px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* === Features Section === */
+.features-section {
+  padding: 80px 5%;
+  background: #fff;
+}
+
+.features-heading h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+/* === Media Queries === */
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
